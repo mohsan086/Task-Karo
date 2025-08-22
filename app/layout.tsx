@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     siteName: "Task-Karo",
     images: [
       {
-        url: "/favicon.png",
+        url: "https://task-karo.vercel.app/favicon.png",
         width: 1200,
         height: 630,
         alt: "Task-Karo - Modern Task Management",
