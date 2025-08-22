@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     title: "Task-Karo - Modern Task Management",
     description:
       "A comprehensive task management application with real-time updates, team collaboration, and powerful analytics.",
-    images: ["<app /public/og-image.png"],
+    images: ["<app/public/og-image.png"],
     creator: "@task-Karo",
   },
   robots: {
