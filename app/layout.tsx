@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     title: "Task-Karo - Modern Task Management",
     description:
       "A comprehensive task management application with real-time updates, team collaboration, and powerful analytics.",
-    images: ["/favicon.png"],
+    images: ["https://task-karo.vercel.app/favicon.png"],
     creator: "@task-Karo",
   },
   robots: {
