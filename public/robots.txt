@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Disallow admin and auth pages from search engines
+Disallow: /admin
+Disallow: /auth/
+
+# Sitemap
+Sitemap: https://your-domain.com/sitemap.xml
