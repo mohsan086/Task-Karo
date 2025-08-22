@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     siteName: "Task-Karo",
     images: [
       {
-        url: "app>public>og-image.png",
+        url: "https://task-karo.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "Task-Karo - Modern Task Management",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     title: "Task-Karo - Modern Task Management",
     description:
       "A comprehensive task management application with real-time updates, team collaboration, and powerful analytics.",
-    images: ["<app>public>og-image.png"],
+    images: ["https://task-karo.vercel.app/og-image.png"],
     creator: "@task-Karo",
   },
   robots: {
