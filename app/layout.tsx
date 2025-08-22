@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     template: "%s | Task-Karo",
   },
   description:
-    "A comprehensive task management application with real-time updates, team collaboration, and powerful analytics. Organize your wtask-flow efficiently with TaskFlow.",
+    "A comprehensive task management application with real-time updates, team collaboration, and powerful analytics. Organize your task efficiently with Task-Karo.",
   keywords: ["task management", "productivity", "collaboration", "project management", "task-karo", "team"],
   authors: [{ name: "Task-Karo Team" }],
   creator: "Task-Karo",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     siteName: "Task-Karo",
     images: [
       {
-        url: "/og-image.png",
+        url: "/favicon.png",
         width: 1200,
         height: 630,
         alt: "Task-Karo - Modern Task Management",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     title: "Task-Karo - Modern Task Management",
     description:
       "A comprehensive task management application with real-time updates, team collaboration, and powerful analytics.",
-    images: ["/og-image.png"],
+    images: ["/favicon.png"],
     creator: "@task-Karo",
   },
   robots: {
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
   verification: {
     google: process.env.GOOGLE_SITE_VERIFICATION,
   },
-    generator: 'v0.app'
+    generator: 'Task-Karo App'
 }
 
 export default function RootLayout({
