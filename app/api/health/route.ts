@@ -6,9 +6,7 @@ export async function GET() {
     // Check database connection
     const supabase = await createClient()
 
-    const { count, error } = await supabase
-  .from("profiles")
-  .select("*", { count: "exact", head: true })
+    const { error } = await supabase.from("profiles").select("count").limit(1).single()
 
     if (error && error.code !== "PGRST116") {
       throw new Error("Database connection failed")
@@ -22,7 +20,6 @@ export async function GET() {
           database: "connected",
           auth: "operational",
         },
-        users: count ?? 0
       },
       { status: 200 },
     )
