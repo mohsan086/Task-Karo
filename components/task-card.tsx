@@ -161,7 +161,7 @@ export function TaskCard({ task }: TaskCardProps) {
               <Button
                 variant="ghost"
                 size="sm"
-                className="h-8 w-8 p-0" disabled
+                className="h-8 w-8 p-0"
               >
                 <MoreHorizontal className="w-4 h-4" />
               </Button>
