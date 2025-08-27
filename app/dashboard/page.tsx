@@ -57,38 +57,38 @@ export default async function DashboardPage() {
 
       {/* Right side */}
       <div className="flex items-center gap-4">
-        {profile?.role === "admin" && (
-          <Button asChild variant="outline" size="sm">
-            <Link href="/admin">
-              <Settings className="w-4 h-4 mr-2" />
-              Admin
-            </Link>
-          </Button>
-        )}
-
-        {/* Stack user info + sign out */}
+        {/* Stack user info + admin + sign out */}
         <div className="flex flex-col items-end gap-1">
+          
           {/* User full name + icon */}
           <div className="flex items-center gap-2 text-sm">
             <User className="w-4 h-4" />
             <span>{profile?.full_name || user.email}</span>
-            {profile?.role === "admin" && (
-              <span className="px-2 py-1 text-xs bg-primary/20 text-primary rounded-full">Admin</span>
-            )}
           </div>
 
-          {/* Sign out button */}
-          <form action={handleSignOut}>
-            <Button variant="outline" size="sm" type="submit">
-              <LogOut className="w-4 h-4 mr-2" />
-              Sign out
-            </Button>
-          </form>
+          {/* Admin + Sign out buttons */}
+          <div className="flex items-center gap-2">
+            {profile?.role === "admin" && (
+              <Button asChild variant="outline" size="sm">
+                <Link href="/admin">
+                  <Settings className="w-4 h-4 mr-2" />
+                  Admin
+                </Link>
+              </Button>
+            )}
+            <form action={handleSignOut}>
+              <Button variant="outline" size="sm" type="submit">
+                <LogOut className="w-4 h-4 mr-2" />
+                Sign out
+              </Button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </header>
+
 
 
 
