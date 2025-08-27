@@ -48,7 +48,7 @@ export default async function DashboardPage() {
               </div>
               <div>
                 <h1 className="text-xl font-bold font-serif">Task-Karo</h1>
-                <p className="text-sm text-muted-foreground">Made with <span style={{ color: "red" }}>❤️</span> by Mohsan Nawab</p>
+                <p className="text-sm text-muted-foreground">Task Management</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
@@ -160,6 +160,14 @@ export default async function DashboardPage() {
           <TaskList tasks={tasks} />
         </div>
       </main>
+      {/* Footer (natural sticky at bottom) */}
+      <footer className="border-t bg-card/80 backdrop-blur-sm">
+        <div className="container mx-auto px-4 py-4 flex justify-center">
+          <p className="text-sm text-muted-foreground text-center">
+            Made with <span style={{ color: "red" }}>❤️</span> by Mohsan Nawab
+          </p>
+        </div>
+      </footer>
     </div>
   )
 }
